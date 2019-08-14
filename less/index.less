@@ -59,15 +59,22 @@ html, body {
 
 @desktopRootFontSize: 100%;
 
+// mixins
+.my-flex-defaults() {
+	display: flex;
+	flex-flow:row-wrap;
+	justify-content:space-between;
+  }
+
 .main-container{
-	width: 80%;
+	width: 60%;
 	height: 100%;
 	background-color: burlywood;
 	margin: 0 auto;
 
 	.navigation{
 		width: 95%;
-		height: 7%;
+		height: 5%;
 		background:grey;
 		margin: 0 auto;
 	}
@@ -93,23 +100,67 @@ html, body {
 		margin: 0 auto;
 
 			.top-bottom{
+				.my-flex-defaults();
 				background:teal;
 				height:50%;
+				width:100%;
 
 				.listen-up{
 					background:hotpink;
-					width:40;
+					width:48%;
 				}
 
-				.attributes{
-					background:khaki;
-					width:40%;
+				.listen-up h3{
+					background: palegreen;
+					font-size: 2em;
+					font-family: fantasy;
 				}
+
+				.listen-up p{
+					padding:0.8em;
+				}
+
+				.super-powers{
+					background:khaki;
+					width:48%;
+				}
+
+				.super-powers h3{
+					background: seagreen;
+					font-size: 2em;
+					font-family: fantasy;
+
+
 			}
 			.lower-bottom{
 				background: firebrick;
 				height:50%;
+				width: 100%
 			}
+
 	}
 }
 
+}
+
+.lower-bottom table{
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	height:80%;
+	}
+	td, th {
+	border: 0.5em solid #dddddd;
+	text-align: left;
+	padding: 0.2em;
+	}
+	tr:nth-child(even) {
+	background-color: #dddddd;
+}
+
+.lower-bottom h4{
+	background: palegreen;
+	font-size: 1.2em;
+	font-family: fantasy;
+	padding:0.4em;
+}
