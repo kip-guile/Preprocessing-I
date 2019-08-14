@@ -136,7 +136,7 @@ table {
   margin: 0 auto;
   background-color: grey;
 }
-.navigation {
+.main-container .navigation {
   width: 95%;
   height: 7%;
   display: flex;
@@ -144,113 +144,119 @@ table {
   justify-content: flex-end;
   align-content: space-between;
 }
-.top-container {
+.main-container .top-container {
   height: 40%;
   width: 95%;
   margin: 0 auto;
   background-color: whitesmoke;
 }
-.introduction {
+.main-container .introduction {
   height: 30%;
   padding: 0.4em;
   border-bottom: 0.2em solid black;
   margin: 1em;
 }
-.introduction-body {
+.main-container .introduction-body {
   height: 30%;
   padding: 0.4em;
 }
-.bottom-container {
+.main-container .bottom-container {
   height: 50%;
   width: 95%;
   margin: 0 auto;
   padding: 1em;
 }
-.bottom-container .top-bottom {
+.main-container .bottom-container .top-bottom {
   display: flex;
   flex-flow: row-wrap;
   justify-content: space-between;
   height: 50%;
   width: 100%;
 }
-.bottom-container .top-bottom .listen-up {
+.main-container .bottom-container .top-bottom .listen-up {
   width: 48%;
   background: whitesmoke;
   margin: 1em;
 }
-.bottom-container .top-bottom .listen-up h3 {
+.main-container .bottom-container .top-bottom .listen-up h3 {
   font-size: 1.5em;
   font-family: fantasy;
   text-align: center;
 }
-.bottom-container .top-bottom .listen-up p {
+.main-container .bottom-container .top-bottom .listen-up p {
   padding: 0.8em;
 }
-.bottom-container .top-bottom .super-powers {
+.main-container .bottom-container .top-bottom .super-powers {
   width: 48%;
   background: whitesmoke;
   margin: 1em;
 }
-.bottom-container .top-bottom .super-powers h3 {
+.main-container .bottom-container .top-bottom .super-powers h3 {
   font-size: 1.5em;
   font-family: fantasy;
   text-align: center;
 }
-.lower-bottom table {
+.main-container .lower-bottom table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
   height: 80%;
 }
-td {
+.main-container td {
   border: 0.5em solid #dddddd;
   text-align: left;
   padding: 0.2em;
 }
-th {
+.main-container th {
   border: 0.5em solid #dddddd;
   text-align: left;
   font-weight: bold;
   padding: 0.2em;
 }
-tr:nth-child(even) {
+.main-container tr:nth-child(even) {
   background-color: #dddddd;
 }
-.lower-bottom h4 {
+.main-container .lower-bottom h4 {
   font-size: 1.2em;
   font-family: fantasy;
   padding: 0.4em;
 }
-.introduction h1 {
+.main-container .introduction h1 {
   font-size: 2em;
   font-family: fantasy;
   padding: 0.4em;
 }
-.introduction p {
+.main-container .introduction p {
   font-size: 1em;
   padding: 0.9em;
 }
-.introduction-body p {
+.main-container .introduction-body p {
   font-size: 1em;
   padding: 0.9em;
 }
-.introduction-body button {
+.main-container .introduction-body button {
   font-size: 1em;
   padding: 0.5em;
   border-radius: 1em;
   margin: 0.5em;
+  background: gray;
 }
-.top-container .selfie {
+.main-container button:hover {
+  background-color: #4CAF50;
+  /* Green */
+  color: white;
+}
+.main-container .top-container .selfie {
   margin: 0 auto;
   width: 50%;
 }
-footer {
+.main-container footer {
   margin: 0 auto;
   text-align: center;
   width: 50%;
   background: whitesmoke;
 }
-.navigation a {
+.main-container .navigation a {
   text-decoration: none;
   color: black;
   font-family: fantasy;
@@ -259,13 +265,13 @@ footer {
   padding-bottom: 0.5em;
   padding-right: 0em;
 }
-.super-powers li {
+.main-container .super-powers li {
   font-size: 1.2em;
   font-family: fantasy;
   padding: 0.3em;
   margin: 0 auto;
 }
-.lower-bottom {
+.main-container .lower-bottom {
   height: 50%;
   width: 100%;
   border: 0.2em solid black;

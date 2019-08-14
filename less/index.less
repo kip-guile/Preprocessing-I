@@ -61,6 +61,8 @@ table {
 
 @topContainerPadding:0.4em;
 
+@mobileBreakpoint:500px;
+
 // mixins
 .my-flex-defaults() {
 	display: flex;
@@ -79,7 +81,6 @@ table {
 	height: 100%;
 	margin: 0 auto;
 	background-color:grey;
-}
 
 	.navigation{
 		width: 95%;
@@ -199,11 +200,18 @@ table {
 	padding:0.5em;
 	border-radius:1em;
 	margin:0.5em;
+	background: gray;
 }
+
+button:hover {
+	background-color: #4CAF50; /* Green */
+	color: white;
+  }
 
 .top-container .selfie{
 	margin: 0 auto;
 	width:50%;
+
 }
 
 footer{
@@ -234,4 +242,5 @@ footer{
 	height:50%;
 	width: 100%;
 	border: 0.2em solid black;
+}
 }
