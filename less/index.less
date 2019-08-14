@@ -53,14 +53,22 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
-	height: 100%;
-}
+// html, body {
+// 	height: 100%;
+// }
 
 @desktopRootFontSize: 100%;
 
+@topContainerPadding:0.4em;
+
 // mixins
 .my-flex-defaults() {
+	display: flex;
+	flex-flow:row-wrap;
+	justify-content:space-between;
+  }
+
+  .second-flex-default(){
 	display: flex;
 	flex-flow:row-wrap;
 	justify-content:space-between;
@@ -74,9 +82,12 @@ html, body {
 
 	.navigation{
 		width: 95%;
-		height: 5%;
+		height: 7%;
 		background:grey;
-		margin: 0 auto;
+		display:flex;
+		margin:0 auto;
+		justify-content: flex-end;
+		align-content: space-between;
 	}
 
 	.top-container{
@@ -86,11 +97,16 @@ html, body {
 		margin: 0 auto;
 	}
 
-		.selfie{
-			height: 2%;
-			width: 2%;
-			margin: 0 auto;
-			background:goldenrod;
+		.introduction{
+			height:30%;
+			background:gold;
+			padding: @topContainerPadding;
+		}
+
+		.introduction-body{
+			height:30%;
+			background:blueviolet;
+			padding:@topContainerPadding;
 		}
 
 	.bottom-container{
@@ -163,4 +179,55 @@ html, body {
 	font-size: 1.2em;
 	font-family: fantasy;
 	padding:0.4em;
+}
+
+.introduction h1{
+	background: palegreen;
+	font-size: 2em;
+	font-family: fantasy;
+	padding:0.4em;
+}
+
+.introduction p{
+	background: palegreen;
+	font-size: 1em;
+	padding:0.9em;
+}
+
+.introduction-body p{
+	background: palegreen;
+	font-size: 1em;
+	padding:0.9em;
+}
+
+.introduction-body button{
+	font-size: 1em;
+	padding:0.5em;
+	border-radius:1em;
+	margin:0.5em;
+	background:gainsboro;
+}
+
+.top-container .selfie{
+	margin: 0 auto;
+	background:goldenrod;
+	width:50%;
+}
+
+footer{
+	margin:0 auto;
+	background: blue;
+	align-items: center;
+	width:20%;
+}
+
+.navigation a{
+	background:forestgreen;
+	text-decoration: none;
+	font-size: 0.9em;
+	font-family: fantasy;
+	padding-left:0.7em;
+	padding-top:0.5em;
+	padding-bottom:0.5em;
+	padding-right: 0em;
 }

@@ -130,10 +130,6 @@ table {
 * {
   box-sizing: border-box;
 }
-html,
-body {
-  height: 100%;
-}
 .main-container {
   width: 60%;
   height: 100%;
@@ -142,9 +138,12 @@ body {
 }
 .main-container .navigation {
   width: 95%;
-  height: 5%;
+  height: 7%;
   background: grey;
+  display: flex;
   margin: 0 auto;
+  justify-content: flex-end;
+  align-content: space-between;
 }
 .main-container .top-container {
   height: 40%;
@@ -152,11 +151,15 @@ body {
   width: 95%;
   margin: 0 auto;
 }
-.main-container .selfie {
-  height: 2%;
-  width: 2%;
-  margin: 0 auto;
-  background: goldenrod;
+.main-container .introduction {
+  height: 30%;
+  background: gold;
+  padding: 0.4em;
+}
+.main-container .introduction-body {
+  height: 30%;
+  background: blueviolet;
+  padding: 0.4em;
 }
 .main-container .bottom-container {
   height: 50%;
@@ -218,4 +221,48 @@ tr:nth-child(even) {
   font-size: 1.2em;
   font-family: fantasy;
   padding: 0.4em;
+}
+.introduction h1 {
+  background: palegreen;
+  font-size: 2em;
+  font-family: fantasy;
+  padding: 0.4em;
+}
+.introduction p {
+  background: palegreen;
+  font-size: 1em;
+  padding: 0.9em;
+}
+.introduction-body p {
+  background: palegreen;
+  font-size: 1em;
+  padding: 0.9em;
+}
+.introduction-body button {
+  font-size: 1em;
+  padding: 0.5em;
+  border-radius: 1em;
+  margin: 0.5em;
+  background: gainsboro;
+}
+.top-container .selfie {
+  margin: 0 auto;
+  background: goldenrod;
+  width: 50%;
+}
+footer {
+  margin: 0 auto;
+  background: blue;
+  align-items: center;
+  width: 20%;
+}
+.navigation a {
+  background: forestgreen;
+  text-decoration: none;
+  font-size: 0.9em;
+  font-family: fantasy;
+  padding-left: 0.7em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-right: 0em;
 }
