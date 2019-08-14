@@ -154,6 +154,7 @@ table {
   height: 30%;
   padding: 0.4em;
   border-bottom: 0.2em solid black;
+  margin: 1em;
 }
 .introduction-body {
   height: 30%;
@@ -174,20 +175,26 @@ table {
 }
 .bottom-container .top-bottom .listen-up {
   width: 48%;
+  background: whitesmoke;
+  margin: 1em;
 }
 .bottom-container .top-bottom .listen-up h3 {
   font-size: 1.5em;
   font-family: fantasy;
+  text-align: center;
 }
 .bottom-container .top-bottom .listen-up p {
   padding: 0.8em;
 }
 .bottom-container .top-bottom .super-powers {
   width: 48%;
+  background: whitesmoke;
+  margin: 1em;
 }
 .bottom-container .top-bottom .super-powers h3 {
   font-size: 1.5em;
   font-family: fantasy;
+  text-align: center;
 }
 .lower-bottom table {
   font-family: arial, sans-serif;
@@ -241,11 +248,11 @@ footer {
   margin: 0 auto;
   text-align: center;
   width: 50%;
-  background: lavender;
+  background: whitesmoke;
 }
 .navigation a {
   text-decoration: none;
-  font-size: 0.9em;
+  color: black;
   font-family: fantasy;
   padding-left: 0.7em;
   padding-top: 0.5em;
