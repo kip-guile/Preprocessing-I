@@ -53,7 +53,195 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+// html, body {
+// 	height: 100%;
+// }
+
+@desktopRootFontSize: 100%;
+
+@topContainerPadding:0.4em;
+
+@mobileBreakpoint:500px;
+
+// mixins
+.my-flex-defaults() {
+	display: flex;
+	flex-flow:row-wrap;
+	justify-content:space-between;
+  }
+
+  .second-flex-default(){
+	display: flex;
+	flex-flow:row-wrap;
+	justify-content:space-between;
+  }
+
+.main-container{
+	width: 50%;
+	height: 100%;
+	margin: 0 auto;
+	background-color:red;
 }
 
+	.navigation{
+		width: 95%;
+		height: 7%;
+		display:flex;
+		margin:0 auto;
+		justify-content: flex-end;
+		align-content: space-between;
+	}
+
+	.top-container{
+		height: 40%;
+		width: 95%;
+		margin: 0 auto;
+		background-color: whitesmoke;
+	}
+
+		.introduction{
+			height:30%;
+			padding: @topContainerPadding;
+			border-bottom: 0.2em solid black;
+			margin:1em;
+		}
+
+		.introduction-body{
+			height:30%;
+			padding:@topContainerPadding;
+		}
+
+	.bottom-container{
+		height: 50%;
+		width: 95%;
+		margin: 0 auto;
+		padding:1em;
+
+			.top-bottom{
+				.my-flex-defaults();
+				height:50%;
+				width:100%;
+
+				.listen-up{
+					width:48%;
+					background: whitesmoke;
+					margin:1em;
+				}
+
+				.listen-up h3{
+					font-size: 1.5em;
+					font-family: fantasy;
+					text-align: center;
+				}
+
+				.listen-up p{
+					padding:0.8em;
+				}
+
+				.super-powers{
+					width:48%;
+					background: whitesmoke;
+					margin:1em;
+				}
+
+				.super-powers h3{
+					font-size: 1.5em;
+					font-family: fantasy;
+					text-align: center;
+			}
+
+	}
+}
+
+.lower-bottom table{
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	height:80%;
+	}
+	td {
+	border: 0.5em solid #dddddd;
+	text-align: left;
+	padding: 0.2em;
+	}
+	th {
+	border: 0.5em solid #dddddd;
+	text-align: left;
+	font-weight: bold;
+	padding: 0.2em;
+	}
+	tr:nth-child(even) {
+	background-color: #dddddd;
+}
+
+.lower-bottom h4{
+	font-size: 1.2em;
+	font-family: fantasy;
+	padding:0.4em;
+}
+
+.introduction h1{
+	font-size: 2em;
+	font-family: fantasy;
+	padding:0.4em;
+}
+
+.introduction p{
+	font-size: 1em;
+	padding:0.9em;
+}
+
+.introduction-body p{
+	font-size: 1em;
+	padding:0.9em;
+}
+
+.introduction-body button{
+	font-size: 1em;
+	padding:0.5em;
+	border-radius:1em;
+	margin:0.5em;
+	background: gray;
+}
+
+button:hover {
+	background-color: #4CAF50; /* Green */
+	color: white;
+  }
+
+.top-container .selfie{
+	margin: 0 auto;
+	width:50%;
+
+}
+
+footer{
+	margin:0 auto;
+	text-align: center;
+	width:50%;
+	background: whitesmoke;
+}
+
+.navigation a{
+	text-decoration: none;
+	color: black;
+	font-family: fantasy;
+	padding-left:0.7em;
+	padding-top:0.5em;
+	padding-bottom:0.5em;
+	padding-right: 0em;
+}
+
+.super-powers li{
+	font-size: 1.2em;
+	font-family: fantasy;
+	padding:0.3em;
+	margin:0 auto;
+}
+
+.lower-bottom{
+	height:50%;
+	width: 100%;
+	border: 0.2em solid black;
+}
+}
